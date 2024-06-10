@@ -1,0 +1,22 @@
+<svg width="29" height="59" viewBox="0 0 29 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="29" height="59" fill="#EFEFEF"/>
+<g id="Creative Agency Website Design" clip-path="url(#clip0_0_1)">
+<rect width="1400" height="6670" transform="translate(-339 -500)" fill="white"/>
+<g id="Header">
+<g id="Group">
+<g id="video play">
+<path id="Ellipse 3295" d="M28.5 59C21.1311 59 14.0487 56.0457 8.73883 50.757C3.42898 45.4684 0.304523 38.2565 0.02109 30.6347C-0.262343 23.0129 2.31728 15.5737 7.21865 9.87821C12.12 4.1827 18.9621 0.673611 26.3092 0.0872876L26.6111 4.14035C20.2764 4.64587 14.3772 7.67142 10.1512 12.5821C5.92525 17.4928 3.7011 23.9068 3.94547 30.4783C4.18985 37.0498 6.88376 43.2679 11.4619 47.8278C16.0401 52.3877 22.1466 54.9349 28.5 54.9349V59Z" fill="#143C3C"/>
+<g id="play button">
+<ellipse id="base" cx="29" cy="29.5" rx="22" ry="21.5" fill="#83A17D"/>
+<path id="play" d="M33.4898 28.2259C34.1511 28.62 34.1377 29.5821 33.4658 29.9577L27.4968 33.2945C26.8249 33.6702 25.9983 33.1775 26.009 32.4078L26.1037 25.5701C26.1144 24.8004 26.9543 24.3309 27.6156 24.725L33.4898 28.2259Z" fill="#FEF6FB"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1400" height="6670" fill="white" transform="translate(-339 -500)"/>
+</clipPath>
+</defs>
+</svg>
