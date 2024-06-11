@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="./assets/js/script.js"></script>
     <!-- embed font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +17,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-
     <!-- style -->
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -48,7 +50,7 @@
                 </div>
                 <!-- hero -->
                 <section class="hero">
-                    <section class="hero__content">
+                    <section class="hero__content animate__slideInDown">
                         <h1 class="section__heading">
                             We’re a creative design agency.
                         </h1>
@@ -57,22 +59,23 @@
                         </p>
                         <div class="hero__action">
                             <a href="#!" class="btn action__btn">Get in touch</a>
-                            <div class="action__watch-video">
-                                <a href="#!" class="watch-video">
-                                    <div class="watch-video__icon">
-                                        <img src="./assets/img/icon/Ellipse 3295.svg" alt="">
+                            <button class="hero__play-btn">
+                                <div class="hero__play-half-circle">
+                                    <div class="hero__play-icon">
+                                        <svg width="8" height="10" viewBox="0 0 8 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.48979 4.22586C8.15106 4.61996 8.13773 5.58212 7.4658 5.95775L1.49682 9.29454C0.824887 9.67017 -0.00170366 9.17755 0.00896126 8.40782L0.103701 1.57014C0.114366 0.800411 0.954284 0.330874 1.61555 0.724974L7.48979 4.22586Z"
+                                                fill="currentColor"></path>
+                                        </svg>
                                     </div>
-                                    <div class="watch-video__icon">
-                                        <img src="./assets/img/icon/play button.svg" alt="">
-                                    </div>
-                                </a>
-                                <a href="">
-                                    <p class="watch-video_p">Watch Video</p>
-                                </a>
-                            </div>
+                                </div>
+                                <span>Watch Video</span>
+                            </button>
                         </div>
                     </section>
-                    <div class="media">
+                    <div class="media animate__slideInDown">
+                        <div class="hero__bg-blue"></div>
                         <figure class="media__image">
                             <img src="./assets/img/img1.jpg" alt="We’re a creative design agency." class="media__img">
                             <img src="./assets/img/img2.jpeg" alt="We’re a creative design agency." class="media__img">
@@ -83,7 +86,7 @@
             </div>
         </header>
         <!-- hero -->
-        <div class="sns">
+        <div class="sns animate__slideInDown">
             <div class="container">
                 <ul class="sns__list">
                     <li class="sns__item">
@@ -156,9 +159,9 @@
                 <div class="services__list">
                     <article class="services-item">
                         <a href="#!" class="services__link">
-                            <figure>
+                            <figure class="services__images">
                                 <img src="./assets/img/services__img1.jpeg"
-                                    alt="We offer a wide range of design services" class="service__image">
+                                    alt="We offer a wide range of design services">
                             </figure>
                             <div class="service__info">
                                 <h3 class="section__h3-heading">
@@ -175,9 +178,9 @@
                     <!--  -->
                     <article class="services-item">
                         <a href="#!" class="services__link">
-                            <figure>
+                            <figure class="services__images">
                                 <img src="./assets/img/services__img2.jpeg"
-                                    alt="We offer a wide range of design services" class="service__image">
+                                    alt="We offer a wide range of design services">
                             </figure>
                             <div class="service__info">
                                 <h3 class="section__h3-heading">
@@ -194,9 +197,9 @@
                     <!-- item3 -->
                     <article class="services-item">
                         <a href="#!" class="services__link">
-                            <figure>
+                            <figure class="services__images">
                                 <img src="./assets/img/services__img3.jpeg"
-                                    alt="We offer a wide range of design services" class="service__image">
+                                    alt="We offer a wide range of design services">
                             </figure>
                             <div class="service__info">
                                 <h3 class="section__h3-heading">
@@ -218,6 +221,7 @@
             <div class="container">
                 <div class="about__content">
                     <div class="about__meadia">
+                        <div class="hero__bg-blue"></div>
                         <figure class="about__image">
                             <img src="./assets/img/img1.jpg" alt="We are an extention of your creative team"
                                 class="about__img">
@@ -323,6 +327,7 @@
                             <h3 class="h3-heading">
                                 Brainstormaing
                             </h3>
+                            <a href="#!" class="plan__learn-more">Learn More</a>
 
                         </div>
                         <p class="desc">
@@ -338,6 +343,7 @@
                             <h3 class="h3-heading">
                                 Execution
                             </h3>
+                            <a href="#!" class="plan__learn-more">Learn More</a>
                         </div>
                         <p class="desc">
                             We customse a ensure aligment and difine key mileones and defiverables experience tells
