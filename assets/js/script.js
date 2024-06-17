@@ -51,3 +51,75 @@ document.addEventListener("DOMContentLoaded", () => {
 
   initializeObserveAnimation(targetElements, options);
 });
+// slider
+const sliderFrame = document.querySelector(".slider-frame");
+const slider = document.querySelector(".slider");
+const items = document.querySelectorAll("article");
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+
+let itemCount = null;
+const itemsDisplayed = () => {
+  if (window.innerWidth > 900) {
+    return (itemCount = 5);
+  } else if (window.innerWidth > 600) {
+    return (itemCount = 4);
+  } else if (window.innerWidth <= 600) {
+    return (itemCount = 3);
+  }
+};
+itemsDisplayed();
+
+const setWidth = () => {
+  const itemWidth = sliderFrame.offsetWidth / itemCount;
+  items.forEach((item) => {
+    item.style.minWidth = `${itemWidth}px`;
+  });
+};
+setWidth();
+
+const detectScreenWidth = () => {
+  window.addEventListener("resize", () => {
+    itemsDisplayed();
+    setWidth();
+  });
+};
+detectScreenWidth();
+
+let index = 0;
+prevBtn.addEventListener("click", () => {
+  if (index !== 0) {
+    index--;
+    slide();
+    count = 0;
+  }
+});
+
+nextBtn.addEventListener("click", () => {
+  if (index !== items.length - itemCount) {
+    index++;
+    slide();
+    count = 0;
+  }
+});
+
+const slide = () => {
+  const offset = (sliderFrame.offsetWidth / itemCount) * index;
+  slider.style.transform = `translateX(-${offset}px)`;
+};
+
+let count = 0;
+setInterval(() => {
+  if (count > 3) {
+    if (index < items.length - itemCount) {
+      index++;
+      slide();
+    } else if (index >= items.length - itemCount) {
+      index = 0;
+      slide();
+    }
+    count = 0;
+  } else {
+    count++;
+  }
+}, 1000);
